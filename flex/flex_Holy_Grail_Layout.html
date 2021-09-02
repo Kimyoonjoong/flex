@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style media="screen">
+.container{
+  display:flex;
+  flex-direction: column;
+  border: 1px solid gray;
+}
+header{
+  border-bottom: 1px solid gray;
+  padding-left: 20px;
+}
+footer{
+  border-top: 1px solid gray;
+  padding: 20px;
+  text-align: center;
+}
+.content{
+  display: flex;
+}
+.content nav{
+  border-right: 1px solid gray;
+}
+.content aside{
+  border-left: 1px solid gray;
+}
+nav, aside{
+  flex-basis:  150px;
+  flex-shrink: 0;
+}
+main{
+  padding: 10px;
+}
+    </style>
+  </head>
+  <body>
+<div class="container">
+   <header>
+     <h1>Holy Grail Layout</h1>
+   </header>
+   <section class="content">
+<nav>
+  <ul>
+    <li>2021</li>
+    <li>8월</li>
+    <li>31일</li>
+  </ul>
+</nav>
+<main>
+   flex:자식고 부모가 있어야 함<br>
+   flex-direction:블럭들 위치 변경,기본 값 row<br>
+   flex-basis:item의 크기 변경<br>
+   flex-grow:부모 클래스 크기(공간)에 맞춰서 자식 클래스 크기를 자동으로 할당<br>
+   flex-shrink:공통분담으로 기본값0으로 지정을 하면 화며이 줄어도 item크기 유지
+</main>
+<aside>
+  AD
+</aside>
+   </section>
+   <footer>
+     <a href="https://opentutorials.org/course/1">홈페이지</a>
+   </footer>
+</div>
+  </body>
+</html>
